@@ -1,13 +1,32 @@
-# hackaton
+# Divanga (Frontend)
 
-## About
-Created by the ModernWebDev Yeoman Generator
+## Установка
 
-This project was created using the [ModernWebDev Yeoman Generator](https://github.com/dsebastien/modernWebDevGenerator) by [dSebastien](https://twitter.com/dSebastien).
+Для начала необходимо убедиться что у вас установлен [nodejs](https://nodejs.org/en/), a также глобально установлен gulp:
+`npm install gulp --global --no-optional`
 
-## How to build
-First, make sure that you have installed the required global npm packages: `npm install gulp --global --no-optional`.
+Далее для загрузки зависимостей в директории проекта выполните команду:
+`npm run setup`
 
-Next, you also need to install the project dependencies using `npm run setup`.
 
-For more details about the build, refer to the [ModernWebDevBuild](https://github.com/dsebastien/modernWebDevBuild) project documentation.
+## Старт проекта для develop разработки
+`npm start`
+
+
+## Сборка проекта
+
+Все скомпилированная публичная часть хранится в папке dist. Для Continuous integration, просто необходимо скопировать содержимое этой папки.
+Для создания/обновления этого проекта выполните команду:
+`npm run build`
+
+
+## Тестирование проекта
+
+В проекте присутствует утилита для тестирования [karma](https://karma-runner.github.io/1.0/index.html). 
+Команды:
+`npm run pretest`
+`npm run test`
+
+## Возможные ошибки
+
+Тут можно описать ошибки, которые появляются при установки/запуске/сборке проекта.
